@@ -1,8 +1,7 @@
-import './App.css';
-// import {Trinary} from './Trinary-operator.js';
+import { Fragment } from "react";
+import MyComp, { MyCompSecond } from "./components/MyComp";
 
-
-const UserData = (props)=>{
+// const UserData = (props)=>{
   // return <div>
   //   <h1>{props.salary}</h1>
   //   <h1>{props.poisiton}</h1>
@@ -12,33 +11,53 @@ const UserData = (props)=>{
   //   <h1>{typeof props.company} </h1>
   // </div>
       // <Trinary/>cl
+// }
+
+
+
+const MyName = ()=>{
+  return <h1>Jitendra Khadoliya</h1>
 }
 
-
 function App() {
-  const lists = ["jitu","punit","ankit","ram","prince","khusi"];
-  return (
-    <div className="App">
+  // const lists = ["jitu","punit","ankit","ram","prince","khusi"];
 
-      <UserData salary = {10000} poisiton = {"junior enginner"} company ="google"/>
+
+  return (
+
+    <Fragment>
+    
+    <div className="App">
+       
+      {/* <UserData salary = {10000} poisiton = {"junior enginner"} company ="google"/>
       <UserData salary = {10000} poisiton = {"Front End enginner"} company ="meta"/>
       <UserData salary = {10000} poisiton = {"Back End enginner"} company ="Netfliex"/>
       {/* <Trinary /> */}
-      {lists.map((list , indexNumber)=>{
+      {/* {lists.map((list , indexNumber)=>{
         return (
-          <h1> {list}</h1>
+          <h1> {list}, {indexNumber }</h1>
         )
-        
-        
+        })}  */}
 
-      })}
 
-    </div>
+        </div>
+        {/* from here i will start new begning */}
+
+        <h1>welcome to the React </h1>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti officiis illum minus doloribus distinctio animi a ipsa quas dolorem?</p>
+
+        <h4>write your name using another componet :-</h4>
+        <MyName />
+        <MyComp/>
+        <p>trying to access MyCompSecond directly from Mycomp.jsx File</p>
+        < MyCompSecond/>
+
+
+
+    </Fragment>
   );  
 }
 
-// const mycomp = (props)=>{
-//   <h1>{props} {props} kdsfhs </h1>
-// }
 
 export default App;
