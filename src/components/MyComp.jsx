@@ -23,5 +23,5 @@ const MyCompSecond = ()=>{
 
 }
 
-export {MyCompSecond};
-export default MyComp;
+export {MyComp, MyCompSecond};
+// export  MyComp;
