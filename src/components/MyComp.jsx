@@ -12,8 +12,8 @@ const MyComp = ()=>{
 
 }
 
+const randomValue = 232;
 const MyCompSecond = ()=>{
-    const randomValue = 232;
 
     return (
         <h1>Now i am inside the 2 MyCompSecond {randomValue} </h1>

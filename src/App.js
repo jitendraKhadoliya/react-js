@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import MyComp, { MyCompSecond } from "./components/MyComp";
+import {PropLearn, PropLearnTwo} from "./components/PropLearn"
 
 // const UserData = (props)=>{
   // return <div>
@@ -52,7 +53,9 @@ function App() {
         <MyComp/>
         <p>trying to access MyCompSecond directly from Mycomp.jsx File</p>
         < MyCompSecond/>
-
+        <PropLearn  firstName = "jinix" lastName = " khadoliya" price = {2000}/>
+        < PropLearnTwo pprice = {13200}/>
+        
 
 
     </Fragment>
