@@ -1,14 +1,18 @@
 
 
 import Header from "./components/Header";
-import "./style/App.css";
-import "./style/Header.css";
 import "./components/Home";
 import "./components/About"
 import {BrowserRouter as Router ,Routes, Route} from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+
+
+import "./style/App.css";
+import "./style/Header.css";
+// import './style/home.css';
+
 
 
 
