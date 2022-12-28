@@ -23,3 +23,8 @@ form{
 form > input,button{
     padding: 1rem;
 }
+
+span{
+    font: 700 1.2rem ;
+    text-align: center;
+}

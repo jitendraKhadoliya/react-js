@@ -7,11 +7,13 @@ import {BrowserRouter as Router ,Routes, Route} from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import UseState from "./components/UseState/UseState";
+
 
 
 import "./style/App.css";
 import "./style/Header.css";
-// import './style/home.css';
+
 
 
 
@@ -29,7 +31,8 @@ function App() {
         <Routes>
 
 
-            <Route path="/" element = {<Home />} />
+            <Route path="/home" element ={<Home />} />
+            <Route path="/usestate"  element = { <UseState />} />
             <Route path="/about" element = {<About />} />
             <Route path="/contact" element = {<Contact />} />
             <Route path="*" element = {<div>Page not found 404</div>} />
