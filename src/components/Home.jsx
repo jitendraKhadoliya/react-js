@@ -6,7 +6,7 @@ import {FaMinus} from 'react-icons/fa';
 import '../style/home.css';
 import UseState from './UseState/UseState';
 
-
+// today i was working on notion template and reading theory abour it
 const Home = () => {
 
   // const myArr = [1,2,3,4]
