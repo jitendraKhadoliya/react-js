@@ -3,6 +3,7 @@ import {FaMinus} from 'react-icons/fa';
 import {BiPlusMedical} from 'react-icons/bi';
 import styled from "styled-components";
 
+
 const ReducerHook = () => {
 
   return (
@@ -40,4 +41,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default ReducerHook;
+export default ReducerHook ;
