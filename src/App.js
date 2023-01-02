@@ -8,6 +8,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import UseState from "./components/UseState/UseState";
+import Axios from "./components/Axios";
+
 
 
 
@@ -35,6 +37,7 @@ function App() {
             <Route path="/usestate"  element = { <UseState />} />
             <Route path="/about" element = {<About />} />
             <Route path="/contact" element = {<Contact />} />
+            <Route path='axios' element = {<Axios />}  />
             <Route path="*" element = {<div>Page not found 404</div>} />
     
 

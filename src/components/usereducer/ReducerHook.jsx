@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useReducer } from "react";
 import {FaMinus} from 'react-icons/fa';
 import {BiPlusMedical} from 'react-icons/bi';
 import styled from "styled-components";
+import reducer from "./reducer";
 
+
+// reduce Hook is the advance version of use state
+
+const initialValue = 0;
 
 const ReducerHook = () => {
+  const [count , dispatch ] = useReducer(reducer , initialValue )
+
 
   return (
     <>
       <Wrapper>
         <div className="container">
-          <button >
+          <button onClick={()=>{dispatch({type : "INC"})}}>
             <BiPlusMedical className="icon" />
           </button>
-          <h1>count</h1>
-          <button >
+          <h1>{count}</h1>
+          <button onClick={()=> dispatch({type : "DEC"})}>
             <FaMinus className="icon minus_icon" />
           </button>
         </div>
