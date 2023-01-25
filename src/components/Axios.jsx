@@ -22,6 +22,7 @@ const AxiosComponent = () => {
             console.log(data);
 
             setCoins(data);
+            setLaoder(false);
         };
 
         FetchFuncForCoins();

@@ -15,6 +15,7 @@ import Axios from "./components/Axios";
 
 import "./style/App.css";
 import "./style/Header.css";
+import ReduxPage from "./components/ReduxPage";
 
 
 
@@ -38,6 +39,7 @@ function App() {
             <Route path="/about" element = {<About />} />
             <Route path="/contact" element = {<Contact />} />
             <Route path='axios' element = {<Axios />}  />
+            <Route path='redux' element = {<ReduxPage />}  />
             <Route path="*" element = {<div>Page not found 404</div>} />
     
 

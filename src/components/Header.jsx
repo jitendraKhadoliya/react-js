@@ -10,6 +10,7 @@ const Header = ()=>{
             <a href="/contact">Contact</a>
             <a href="/usestate">UseState</a>
             <a href="/axios">Axios</a>
+            <a href="/redux">Redux</a>
 
         </nav>
     )
